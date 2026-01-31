@@ -518,18 +518,18 @@
                 <div class="metrics-row">
                     <div class="metric">
                         <div class="metric-label">Commercial Lives</div>
-                        <div class="metric-value">3.7<span style="font-size: 20px; color: #54575E;">%</span></div>
-                        <div class="metric-subtext">6.8M / 186.5M covered</div>
+                        <div class="metric-value">3.8<span style="font-size: 20px; color: #54575E;">%</span></div>
+                        <div class="metric-subtext">7.0M / 187.2M covered</div>
                     </div>
                     <div class="metric">
                         <div class="metric-label">Medicare Lives</div>
                         <div class="metric-value">0<span style="font-size: 20px; color: #54575E;">%</span></div>
-                        <div class="metric-subtext">0 / 53.7M covered</div>
+                        <div class="metric-subtext">0 / 54.3M covered</div>
                     </div>
                     <div class="metric">
                         <div class="metric-label">Medicaid Lives</div>
                         <div class="metric-value">0<span style="font-size: 20px; color: #54575E;">%</span></div>
-                        <div class="metric-subtext">0 / 76.5M covered</div>
+                        <div class="metric-subtext">0 / 73.3M covered</div>
                     </div>
                 </div>
 
@@ -546,32 +546,32 @@
                         <tr>
                             <td>TRICARE Uniform Formulary</td>
                             <td>Federal</td>
-                            <td>5,749,433</td>
-                            <td><span class="status-badge status-pending">(T3) Non-Preferred</span></td>
-                        </tr>
-                        <tr>
-                            <td>CHI Franciscan</td>
-                            <td>Employer</td>
-                            <td>217,484</td>
-                            <td><span class="status-badge status-pending">(T3) Non-Preferred</span></td>
+                            <td>5,879,432</td>
+                            <td><span class="status-badge status-covered">(T3)</span></td>
                         </tr>
                         <tr>
                             <td>MGM Resorts International</td>
                             <td>Employer</td>
-                            <td>183,545</td>
-                            <td><span class="status-badge status-pending">(T3) Non-Preferred</span></td>
+                            <td>185,337</td>
+                            <td><span class="status-badge status-covered">(T3)</span></td>
                         </tr>
                         <tr>
-                            <td>General Electric</td>
+                            <td>UnitedHealthcare Community Plan Essential</td>
+                            <td>HIX-Medicaid</td>
+                            <td>174,217</td>
+                            <td><span class="status-badge status-pending">(T3) (PA)</span></td>
+                        </tr>
+                        <tr>
+                            <td>CHI Franciscan</td>
                             <td>Employer</td>
-                            <td>118,127</td>
-                            <td><span class="status-badge status-pending">(T3) Non-Preferred</span></td>
+                            <td>135,877</td>
+                            <td><span class="status-badge status-covered">(T3)</span></td>
                         </tr>
                         <tr>
                             <td>Apple</td>
                             <td>Employer</td>
-                            <td>106,071</td>
-                            <td><span class="status-badge status-pending">(T3) Non-Preferred</span></td>
+                            <td>118,347</td>
+                            <td><span class="status-badge status-covered">(T3)</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -727,7 +727,7 @@
                     },
                     {
                         label: 'Actual',
-                        data: [3.7, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                        data: [3.76, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
                         borderColor: '#00B2E3',
                         backgroundColor: '#00B2E3',
                         borderWidth: 3,
