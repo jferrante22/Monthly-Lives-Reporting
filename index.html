@@ -368,15 +368,17 @@
             }
         }
 
-        /* Mobile responsive */
+        /* Mobile responsive - full width layout */
         @media (max-width: 768px) {
             body {
-                padding: 12px;
+                padding: 0;
                 background: #DCEEF4;
             }
 
             .container {
                 max-width: 100%;
+                width: 100%;
+                padding: 0;
             }
 
             .header {
@@ -384,6 +386,8 @@
                 gap: 12px;
                 flex-direction: row;
                 align-items: center;
+                border-radius: 0;
+                margin-bottom: 8px;
             }
 
             .header h1 {
@@ -400,152 +404,158 @@
             }
 
             .dashboard-grid {
-                grid-template-columns: 1fr;
-                gap: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 0;
             }
 
             .formulary-card,
             .projection-card,
             .program-card {
                 grid-column: span 1;
+                width: 100%;
             }
 
             .card {
                 padding: 16px;
-                border-radius: 12px;
+                border-radius: 0;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                width: 100%;
             }
 
             /* Disable hover effects on mobile */
             .card:hover,
             .program-card:hover {
                 transform: none;
-                box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             }
 
             .card-title {
-                font-size: 15px;
-                margin-bottom: 14px;
+                font-size: 16px;
+                margin-bottom: 16px;
                 padding-bottom: 10px;
             }
 
             .metrics-row {
-                grid-template-columns: 1fr;
-                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
             }
 
             .metric {
-                padding: 14px;
+                padding: 16px;
                 text-align: left;
+                width: 100%;
+                border-radius: 8px;
             }
 
             .metric-label {
-                font-size: 11px;
-                margin-bottom: 6px;
+                font-size: 12px;
+                margin-bottom: 8px;
             }
 
             .metric-value {
-                font-size: 26px;
+                font-size: 28px;
             }
 
             .metric-subtext {
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .program-metrics {
+                display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 10px;
+                width: 100%;
             }
 
             .program-metric {
-                padding: 12px;
+                padding: 14px;
             }
 
             .program-metric-label {
-                font-size: 10px;
+                font-size: 11px;
             }
 
             .program-metric-value {
-                font-size: 20px;
+                font-size: 22px;
             }
 
             .secondary-metrics {
+                display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 8px;
+                width: 100%;
             }
 
             .secondary-metric {
-                padding: 10px;
+                padding: 12px;
             }
 
             .secondary-metric-label {
-                font-size: 9px;
-            }
-
-            .secondary-metric-value {
-                font-size: 14px;
-            }
-
-            .stat-row {
-                margin-bottom: 14px;
-            }
-
-            .stat-label {
                 font-size: 10px;
             }
 
+            .secondary-metric-value {
+                font-size: 15px;
+            }
+
+            .stat-row {
+                margin-bottom: 16px;
+            }
+
+            .stat-label {
+                font-size: 11px;
+            }
+
             .stat-value {
-                font-size: 20px;
+                font-size: 22px;
             }
 
             .chart-container {
-                height: 220px;
-                margin-top: 12px;
+                height: 250px;
+                margin-top: 16px;
+                width: 100%;
             }
 
             .ubc-chart-container {
-                height: 140px;
-                margin-top: 10px;
+                height: 160px;
+                margin-top: 12px;
+                width: 100%;
             }
 
-            /* Scrollable table wrapper */
+            /* Full width scrollable table */
             .top-plans-table {
+                width: 100%;
                 display: block;
                 overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
-                margin: 0 -16px;
-                padding: 0 16px;
-            }
-
-            .top-plans-table table {
-                min-width: 500px;
             }
 
             .top-plans-table th,
             .top-plans-table td {
-                font-size: 12px;
-                padding: 10px 8px;
+                font-size: 13px;
+                padding: 12px 10px;
                 white-space: nowrap;
             }
 
             .top-plans-table th:first-child,
             .top-plans-table td:first-child {
                 white-space: normal;
-                min-width: 180px;
+                min-width: 200px;
             }
 
             .status-badge {
-                font-size: 10px;
-                padding: 4px 10px;
+                font-size: 11px;
+                padding: 5px 12px;
             }
         }
 
         @media (max-width: 480px) {
-            body {
-                padding: 8px;
-            }
-
             .header {
-                padding: 12px;
+                padding: 14px;
             }
 
             .header h1 {
@@ -565,54 +575,59 @@
             }
 
             .card-title {
-                font-size: 14px;
+                font-size: 15px;
             }
 
             .metric {
-                padding: 12px;
+                padding: 14px;
             }
 
             .metric-value {
-                font-size: 24px;
+                font-size: 26px;
             }
 
             .metric-subtext {
-                font-size: 11px;
+                font-size: 12px;
             }
 
             .program-metrics {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .program-metric {
+                padding: 12px;
             }
 
             .program-metric-value {
-                font-size: 22px;
+                font-size: 20px;
             }
 
             .secondary-metrics {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
             }
 
             .stat-value {
-                font-size: 18px;
+                font-size: 20px;
             }
 
             .chart-container {
-                height: 200px;
+                height: 220px;
             }
 
             .ubc-chart-container {
-                height: 120px;
+                height: 140px;
             }
 
             .top-plans-table th,
             .top-plans-table td {
-                font-size: 11px;
-                padding: 8px 6px;
+                font-size: 12px;
+                padding: 10px 8px;
             }
 
             .status-badge {
-                font-size: 9px;
-                padding: 3px 8px;
+                font-size: 10px;
+                padding: 4px 10px;
             }
         }
     </style>
