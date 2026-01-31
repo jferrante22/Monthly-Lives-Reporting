@@ -371,25 +371,37 @@
         /* Mobile responsive */
         @media (max-width: 768px) {
             body {
-                padding: 10px;
+                padding: 12px;
+                background: #DCEEF4;
+            }
+
+            .container {
+                max-width: 100%;
             }
 
             .header {
-                padding: 20px 15px;
-                gap: 15px;
+                padding: 16px;
+                gap: 12px;
+                flex-direction: row;
+                align-items: center;
             }
 
             .header h1 {
                 font-size: 18px;
+                line-height: 1.2;
             }
 
             .header-logo {
-                height: 35px;
+                height: 32px;
+            }
+
+            .header .date {
+                font-size: 12px;
             }
 
             .dashboard-grid {
                 grid-template-columns: 1fr;
-                gap: 15px;
+                gap: 12px;
             }
 
             .formulary-card,
@@ -399,34 +411,181 @@
             }
 
             .card {
-                padding: 20px;
+                padding: 16px;
+                border-radius: 12px;
             }
 
-            .card:hover {
-                transform: translateY(-2px);
+            /* Disable hover effects on mobile */
+            .card:hover,
+            .program-card:hover {
+                transform: none;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.08);
             }
 
             .card-title {
-                font-size: 16px;
-                margin-bottom: 15px;
+                font-size: 15px;
+                margin-bottom: 14px;
+                padding-bottom: 10px;
             }
 
             .metrics-row {
                 grid-template-columns: 1fr;
-                gap: 12px;
+                gap: 10px;
+            }
+
+            .metric {
+                padding: 14px;
+                text-align: left;
+            }
+
+            .metric-label {
+                font-size: 11px;
+                margin-bottom: 6px;
             }
 
             .metric-value {
-                font-size: 28px;
+                font-size: 26px;
+            }
+
+            .metric-subtext {
+                font-size: 12px;
+            }
+
+            .program-metrics {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .program-metric {
+                padding: 12px;
+            }
+
+            .program-metric-label {
+                font-size: 10px;
+            }
+
+            .program-metric-value {
+                font-size: 20px;
+            }
+
+            .secondary-metrics {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .secondary-metric {
+                padding: 10px;
+            }
+
+            .secondary-metric-label {
+                font-size: 9px;
+            }
+
+            .secondary-metric-value {
+                font-size: 14px;
+            }
+
+            .stat-row {
+                margin-bottom: 14px;
+            }
+
+            .stat-label {
+                font-size: 10px;
+            }
+
+            .stat-value {
+                font-size: 20px;
+            }
+
+            .chart-container {
+                height: 220px;
+                margin-top: 12px;
+            }
+
+            .ubc-chart-container {
+                height: 140px;
+                margin-top: 10px;
+            }
+
+            /* Scrollable table wrapper */
+            .top-plans-table {
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -16px;
+                padding: 0 16px;
+            }
+
+            .top-plans-table table {
+                min-width: 500px;
+            }
+
+            .top-plans-table th,
+            .top-plans-table td {
+                font-size: 12px;
+                padding: 10px 8px;
+                white-space: nowrap;
+            }
+
+            .top-plans-table th:first-child,
+            .top-plans-table td:first-child {
+                white-space: normal;
+                min-width: 180px;
+            }
+
+            .status-badge {
+                font-size: 10px;
+                padding: 4px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 8px;
+            }
+
+            .header {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 16px;
+            }
+
+            .header-logo {
+                height: 28px;
+            }
+
+            .header .date {
+                font-size: 11px;
+            }
+
+            .card {
+                padding: 14px;
+            }
+
+            .card-title {
+                font-size: 14px;
+            }
+
+            .metric {
+                padding: 12px;
+            }
+
+            .metric-value {
+                font-size: 24px;
+            }
+
+            .metric-subtext {
+                font-size: 11px;
             }
 
             .program-metrics {
                 grid-template-columns: 1fr;
-                gap: 12px;
             }
 
             .program-metric-value {
-                font-size: 24px;
+                font-size: 22px;
             }
 
             .secondary-metrics {
@@ -434,63 +593,21 @@
             }
 
             .stat-value {
-                font-size: 22px;
+                font-size: 18px;
             }
 
             .chart-container {
-                height: 250px;
+                height: 200px;
             }
 
             .ubc-chart-container {
-                height: 160px;
-            }
-
-            .top-plans-table {
-                display: block;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            .top-plans-table thead,
-            .top-plans-table tbody,
-            .top-plans-table tr {
-                display: table;
-                width: 100%;
-                table-layout: fixed;
+                height: 120px;
             }
 
             .top-plans-table th,
             .top-plans-table td {
                 font-size: 11px;
                 padding: 8px 6px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 16px;
-            }
-
-            .header-logo {
-                height: 30px;
-            }
-
-            .header .date {
-                font-size: 12px;
-            }
-
-            .metric-value {
-                font-size: 24px;
-            }
-
-            .program-metric-value {
-                font-size: 20px;
-            }
-
-            .top-plans-table th,
-            .top-plans-table td {
-                font-size: 10px;
-                padding: 6px 4px;
             }
 
             .status-badge {
